@@ -1,0 +1,20 @@
+{
+  "name": "AI Order App Dev Container",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11-node",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "20"
+    }
+  },
+  "postCreateCommand": "pip install -r backend/requirements.txt",
+  "customizations": {
+    "vscode": {
+      "settings": {},
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  }
+}
